@@ -50,7 +50,7 @@ The scene uses:
 - street race track shell
 - model -> view -> projection -> clip-space output
 
-## Run
+## Run the Framebuffer Generator
 
 From the repository root:
 
@@ -62,4 +62,31 @@ The script prints an ASCII framebuffer and writes:
 
 ```text
 cyglobs_fast_and_furious_framebuffer.txt
+```
+
+## Draw a PNG Scene From the Framebuffer
+
+Install Pillow:
+
+```bash
+pip install pillow
+```
+
+Then run:
+
+```bash
+cd examples/cyglobs_fast_and_furious_example
+python draw_from_framebuffer.py
+```
+
+The script reads or generates:
+
+```text
+cyglobs_fast_and_furious_framebuffer.txt
+```
+
+and writes:
+
+```text
+cyglobs_fast_and_furious_scene.png
 ```
